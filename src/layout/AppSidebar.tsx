@@ -264,8 +264,7 @@ const AppSidebar: React.FC = () => {
               minWidth: '45px',
               height: 'auto',
               maxHeight: '38px',
-              objectFit: 'contain',
-              display: 'block'
+              objectFit: 'contain'
             }}
           />
           <img
@@ -277,8 +276,7 @@ const AppSidebar: React.FC = () => {
               minWidth: '45px',
               height: 'auto',
               maxHeight: '38px',
-              objectFit: 'contain',
-              display: 'block'
+              objectFit: 'contain'
             }}
           />
         </Link>
