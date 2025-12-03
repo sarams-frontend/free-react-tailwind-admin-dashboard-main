@@ -18,15 +18,20 @@ export default function SignInForm() {
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault() // Evita el refresco de la página
 
-    console.log('Email:', email)
-    console.log('Password:', password)
+    const trimmedEmail = email.trim()
+    const trimmedPassword = password.trim()
 
-    if (email === 'admin@example.com' && password === '123456') {
+    console.log('Email:', trimmedEmail)
+    console.log('Password:', trimmedPassword)
+
+    if (trimmedEmail === 'admin@example.com' && trimmedPassword === '123456') {
       console.log('Login successful')
       login() // Guardar sesión en Zustand
       navigate('/Dashboard/Home') // Redirigir al Dashboard
     } else {
       console.log('Login failed')
+      console.log('Expected email: admin@example.com, got:', trimmedEmail)
+      console.log('Expected password: 123456, got:', trimmedPassword)
       alert('Credenciales incorrectas')
     }
   }

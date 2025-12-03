@@ -16,9 +16,9 @@ interface UserProfileState extends UserProfile {
 }
 
 const defaultProfile: UserProfile = {
-  firstName: "Musharof",
-  lastName: "Chowdhury",
-  email: "randomuser@pimjo.com",
+  firstName: "Snsorial",
+  lastName: "Snsorial",
+  email: "snsorial@example.com",
   phone: "+09 363 398 46",
   country: "United States",
   cityState: "Phoenix, Arizona, United States.",
